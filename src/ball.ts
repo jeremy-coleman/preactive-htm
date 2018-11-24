@@ -1,4 +1,3 @@
-//import {h} from "preact"
 import {Component, html, h} from "./preactive/component"
 import mouse from "./mouse";
 

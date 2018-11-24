@@ -12,10 +12,10 @@
     "removeComments": true,
     "strictNullChecks": false,
     "preserveConstEnums": true,
-    "sourceMap": true,
     "lib": ["es2015", "es2016", "dom", "esnext"],
     "outDir": "dist",
-    "declaration": false
-  },
-  "include": ["src"]
+    "declaration": false,
+    "allowJs": true
+  }
+  //"include": ["src"]
 }
