@@ -1,0 +1,27 @@
+{
+	"name": "preactive-html",
+	"version": "0.0.1",
+	"description": "<3",
+	"main": "index.js",
+	"typings": "index.d.js",
+	"author": "jeremy",
+	"license": "MIT",
+	"scripts": {
+		"start": "webpack-dev-server --content-base dist --mode=development --open",
+		"build": "cross-env NODE_ENV=production rimraf lib && webpack --mode=production --optimize-minimize"
+	},
+	"dependencies": {
+		"htm": "1.0.1",
+		"preact": "8.3.1"
+	},
+	"devDependencies": {
+		"@types/node": "^10.12.10",
+		"html-webpack-plugin": "3.2.0",
+		"terser-webpack-plugin": "1.1.0",
+		"ts-loader": "5.2.1",
+		"typescript": "3.1.2",
+		"webpack": "4.20.2",
+		"webpack-cli": "3.1.2",
+		"webpack-dev-server": "3.1.9"
+	}
+}
