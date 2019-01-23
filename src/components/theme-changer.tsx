@@ -29,38 +29,31 @@ export let RandomThemeButton = props => {
         {...props}
         onClick={() => rngTheme()}
     >
-        {"Change Theme"}
+        {"Change Root/Global Theme"}
     </Button>
         <Button
         {...props}
         onClick={() => rngNestedTheme()}
     >
-        {"Override Vendor Theme"}
+        {"Override Vendor Theme(Look at the card)"}
     </Button>
     <div>
-    <div id="brand-theme-barrier">
     <Button
         {...props}
-        style={{background: 'var(--mdc-theme-primary)'}}
         onClick={() => rngNested2Theme()}
     >
         {"Override inside consumer Barrier"}
     </Button>
-    </div>
+    <ThemeBarrier><Button>Who needs jss</Button></ThemeBarrier>
     </div>
     </div>
     )
 }
 
 
-
-let x = `
-p ~ "branded-theme-barrier" {
-  background: #ff0000;
-}`
-
+// u could also wrap stuff with this to act like a jss ThemeProvider 
 export let ThemeBarrier = props => {
     return (
-        <div id="branded-theme-barrier" {...props}>{props.children}</div>
+        <div id="brand-theme-barrier" {...props}>{props.children}</div>
     )
 }
