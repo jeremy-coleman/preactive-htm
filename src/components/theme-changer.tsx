@@ -3,7 +3,6 @@ import { route } from 'preact-router';
 import Button from 'preact-material-components/Button';
 import 'preact-material-components/Button/style.css';
 
-import './theme-barrier.css'
 
 let setPrimaryColor = async (color) => void await document.body.style.setProperty("--primary", color);
 let fromSelector = async (elementQuery, color) => void await document.querySelector<any>(`${elementQuery}`).style.setProperty("--primary", color);
